@@ -1,0 +1,45 @@
+/// SHOW CREATE TABLE class_user
+/// ALTER TABLE class_user DROP FOREIGN KEY `_fluent_fk_class_user.user_id-users.id`;
+/// ALTER TABLE class_user DROP FOREIGN KEY `_fluent_fk_class_user.class_id-classs.id`;
+/// ALTER TABLE class_user ADD CONSTRAINT `_fluent_fk_class_user.user_id-users.id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+/// ALTER TABLE class_user ADD CONSTRAINT `_fluent_fk_class_user.class_id-classs.id` FOREIGN KEY (`class_id`) REFERENCES `classs` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+/// SHOW CREATE TABLE classs;
+/// ALTER TABLE classs MODIFY creatorId INT(10) UNSIGNED NULL;
+/// ALTER TABLE classs MODIFY courseId INT(10) UNSIGNED NULL;
+/// ALTER TABLE classs DROP FOREIGN KEY `_fluent_fk_classs.creatorId-users.id`;
+/// ALTER TABLE classs DROP FOREIGN KEY `_fluent_fk_classs.courseId-courses.id`;
+/// ALTER TABLE classs ADD CONSTRAINT `_fluent_fk_classs.courseId-courses.id` FOREIGN KEY (`courseId`) REFERENCES `courses` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+/// ALTER TABLE classs ADD CONSTRAINT `_fluent_fk_classs.creatorId-users.id` FOREIGN KEY (`creatorId`) REFERENCES `users` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
+
+/// SHOW CREATE TABLE choices;
+/// ALTER TABLE choices DROP FOREIGN KEY `_fluent_fk_choices.clueId-clues.id`;
+/// ALTER TABLE choices ADD CONSTRAINT `_fluent_fk_choices.clueId-clues.id` FOREIGN KEY (`clueId`) REFERENCES `clues` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+/// ALTER TABLE activitys MODIFY activity TEXT;
+/// ALTER TABLE clues MODIFY riddle TEXT;
+/// ALTER TABLE choices MODIFY choiceStatement TEXT;
+/// ALTER TABLE choices MODIFY answer TEXT;
+/// ALTER TABLE choices MODIFY encryptedAnswer TEXT;
+/// ALTER TABLE classs MODIFY aClassDescription TEXT;
+/// ALTER TABLE courses MODIFY courseDescription TEXT;
+/// ALTER TABLE treasures MODIFY treasureDescription TEXT;
+/// ALTER TABLE treasures MODIFY claimingQuestion TEXT;
+/// ALTER TABLE treasures MODIFY claimingAnswers TEXT;
+/// ALTER TABLE treasures MODIFY encryptedClaimingAnswers TEXT;
+
+/// SHOW CREATE TABLE games;
+/// ALTER TABLE games MODIFY treasureId INT(10) UNSIGNED NULL;
+/// ALTER TABLE games DROP FOREIGN KEY `_fluent_fk_games.treasureId-treasures.id`;
+/// ALTER TABLE games ADD CONSTRAINT `_fluent_fk_games.treasureId-treasures.id` FOREIGN KEY (`treasureId`) REFERENCES `treasures` (`id`) ON DELETE SET NULL;
+
+/// SHOW CREATE TABLE clue_game;
+/// ALTER TABLE clue_game DROP FOREIGN KEY `_fluent_fk_clue_game.clue_id-clues.id`;
+/// ALTER TABLE clue_game DROP FOREIGN KEY `_fluent_fk_clue_game.game_id-games.id`;
+/// ALTER TABLE clue_game ADD CONSTRAINT `_fluent_fk_clue_game.clue_id-clues.id` FOREIGN KEY (`clue_id`) REFERENCES `clues` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+/// ALTER TABLE clue_game ADD CONSTRAINT `_fluent_fk_clue_game.game_id-games.id` FOREIGN KEY (`game_id`) REFERENCES `games` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+/// ALTER TABLE games MODIFY discussion TEXT;
+
+
+

@@ -1,0 +1,995 @@
+{
+	"info": {
+		"_postman_id": "3efdf0f7-185f-4a53-a98b-875e535f5b59",
+		"name": "eXzeptional ARTitser 1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GN] Log in user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "21232f297a57a5a743894a0e4a801fc3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "21232f297a57a5a743894a0e4a801fc3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/login/user",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"login",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GN] Log out user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/logout/user/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"logout",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve users for user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/users/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"users",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/users/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"users",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Create a new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lastName",
+							"value": "Ramos",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Mary Jane",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "mjramos001",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mjramos001",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "encryptedUsername",
+							"value": "757c022abe9e5baea05e94e456db1b5a",
+							"type": "text"
+						},
+						{
+							"key": "encryptedPassword",
+							"value": "757c022abe9e5baea05e94e456db1b5a",
+							"type": "text"
+						},
+						{
+							"key": "isForApproval",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/create/user/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"create",
+						"user",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Update user with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lastName",
+							"value": "Abarra",
+							"type": "text"
+						},
+						{
+							"key": "middleName",
+							"value": "Camba",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Julius",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "21232f297a57a5a743894a0e4a801fc3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "21232f297a57a5a743894a0e4a801fc3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "07-11-1986",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "isForApproval",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/update/user/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"update",
+						"user",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Delete user with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/delete/user/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"delete",
+						"user",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve courses for user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"description": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/courses/user/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"courses",
+						"user",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve all courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"description": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/courses/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"courses",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Create a new course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Kasaysayan",
+							"type": "text"
+						},
+						{
+							"key": "courseDescription",
+							"value": "Araling Panlipunan",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "001",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "107",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/create/course/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"create",
+						"course",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Update course with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Maytematiks",
+							"type": "text"
+						},
+						{
+							"key": "courseDescription",
+							"value": "Pangunahing Pagbibilang",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/update/course/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"update",
+						"course",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Delete course with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/delete/course/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"delete",
+						"course",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve classes for user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/classes/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"classes",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve all classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/classes/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"classes",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Create a new class",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "CL001",
+							"type": "text"
+						},
+						{
+							"key": "aClassDescription",
+							"value": "Sample Class",
+							"type": "text"
+						},
+						{
+							"key": "schedule",
+							"value": "MTW, 8:30 AM - 9:30 AM",
+							"type": "text"
+						},
+						{
+							"key": "venue",
+							"value": "Room 1",
+							"type": "text"
+						},
+						{
+							"key": "courseId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "creatorId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "playerIds",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/create/class/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"create",
+						"class",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Update class with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "CLS001",
+							"type": "text"
+						},
+						{
+							"key": "aClassDescription",
+							"value": "Sample Class",
+							"type": "text"
+						},
+						{
+							"key": "schedule",
+							"value": "MWF, 5:00 PM - 6:00 PM",
+							"type": "text"
+						},
+						{
+							"key": "venue",
+							"value": "Room 1",
+							"type": "text"
+						},
+						{
+							"key": "courseId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "creatorId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "playerIds",
+							"value": "2,3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/update/class/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"update",
+						"class",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Delete class with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/delete/class/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"delete",
+						"class",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve statistics dashboard primary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/statistics/administrator/dashboard/primary/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"statistics",
+						"administrator",
+						"dashboard",
+						"primary",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Retrieve all activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/activities",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GA] Approve user registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "isForApproval",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/approve/user/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"approve",
+						"user",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GC] Create a new clue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "riddle",
+							"value": "Sample riddle",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "12.000",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "15.000",
+							"type": "text"
+						},
+						{
+							"key": "points",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "clue",
+							"value": "Sample Clue",
+							"type": "text"
+						},
+						{
+							"key": "owner",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "choices",
+							"value": "[{\"choiceStatement\": \"Sample Statement 1\", \"isCorrect\": 0, \"answer\": \"\", \"encryptedAnswer\": \"\", \"isCaseSensitive\": 0, \"owner\": 1}, {\"choiceStatement\": \"Sample Statement 1\", \"isCorrect\": 0, \"answer\": \"\", \"encryptedAnswer\": \"\", \"isCaseSensitive\": 0, \"owner\": 1}]",
+							"type": "text"
+						},
+						{
+							"key": "locationName",
+							"value": "Antipolo City",
+							"type": "text"
+						},
+						{
+							"key": "pointsOnAttempts",
+							"value": "20,15,10,5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/create/clue/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"create",
+						"clue",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GC] Retrieve clues for user with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/retrieve/clues/user/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"retrieve",
+						"clues",
+						"user",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GC] Update clue with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "riddle",
+							"value": "Sample riddle updated",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "12.000",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "15.000",
+							"type": "text"
+						},
+						{
+							"key": "points",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "clue",
+							"value": "Sample Clue updated",
+							"type": "text"
+						},
+						{
+							"key": "choices",
+							"value": "[{\"choiceStatement\": \"Sample Statement 1\", \"isCorrect\": 0, \"answer\": \"\", \"encryptedAnswer\": \"\", \"isCaseSensitive\": 0, \"owner\": 1}, {\"choiceStatement\": \"Sample Statement 1\", \"isCorrect\": 0, \"answer\": \"\", \"encryptedAnswer\": \"\", \"isCaseSensitive\": 0, \"owner\": 1}]",
+							"type": "text"
+						},
+						{
+							"key": "locationName",
+							"value": "Antipolo City",
+							"type": "text"
+						},
+						{
+							"key": "pointsOnAttempts",
+							"value": "20,15,10,5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/update/clue/2/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"update",
+						"clue",
+						"2",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GC] Delete clue with id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api_url}}/delete/clue/1/requestor/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"delete",
+						"clue",
+						"1",
+						"requestor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
